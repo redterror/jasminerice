@@ -5,6 +5,7 @@ module Jasminerice
 
     helper Jasminerice::HelperMethods rescue nil
     helper Jasminerice::SpecHelper rescue nil
+    helper RequirejsHelper rescue nil
 
     before_filter { prepend_view_path Rails.root.to_s }
 
